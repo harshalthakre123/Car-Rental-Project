@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup/signup.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div id="main" align="center">
+        <div id="form">
+            <h1 id="heading">Create New Account</h1>
+            <form action="/login/login.html" class="suform">
+                
+                <!-- name======================= -->
+                <p id="err-name"></p>
+                <label for="name"></label>
+                <h3 align="left">Enter your Name:</h3>
+                <input type="text" placeholder="Full name" id="name" class="inputbox">
+
+                <!-- username================= -->
+                <!-- <p id="err-username"></p>
+                <label for="username"></label>
+                <h3 align="left">Enter Username:</h3>
+                <input type="text" id="username" placeholder="abc_12" class="inputbox"> -->
+
+                <!-- date of birth======================== -->
+                <p id="err-dob"></p>
+                <label for="dob"></label>
+                <h3 align="left">Date of Birth:</h3>
+                <input type="date" id="dob" class="inputbox">
+                
+                <!-- gender============================ -->
+                <p id="err-gender"></p>
+                <label for="gender"></label>
+                <h3 align="left">Gender:</h3>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+        
+                <!-- email================================= -->
+                <p id="err-dob"></p>
+                <label for="email"></label>
+                <h3 align="left">Enter Email:</h3>
+                <input type="email" placeholder="abc123@gmail.com" class="inputbox">
+        
+            <!--mobile number=======================  -->
+                <p id="err-mob-num"></p>
+                <label for="mob-num"></label>
+                <h3 align="left">Mobile Number:</h3>
+                <input type="number" id="mob-num" placeholder="10 Digit Mobile Number" class="inputbox">
+        
+                
+                <!-- password============================== -->
+                <p id="err-pass"></p>
+                <label for="pass"></label>
+                <h3 align="left">Enter Password:</h3>
+                <input type="password" placeholder="Password" id="pass" class="inputbox">
+                
+                <!-- confirm password=================================== -->
+                <p id="err-cpass"></p>
+                <label for="cpass"></label>
+                <h3 align="left">Confirm Password:</h3>
+                <input type="pass" placeholder="Confirm Password" id="cpass" class="inputbox">
+                <br>
+            
+                <!-- Signup button======================== -->
+                <button id="subtn">Signup</button>
+                <br>
+                
+                <!-- login link============================ -->
+                <a href="/login/login.html">Already have an Account</a>
+                
+
+            </form>
+        </div>
+        
+    </div>
+
+
+
+    
+    <script src="/signup/signup.js"></script>
+
+</body>
+</html>
