@@ -1,64 +1,62 @@
-// @import'/main.scss';
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-#main{
-    height: 100vh;
-    width: 100%;
-    background: url('/cars/pexels-trace-707046.jpg');
-    background-position-y: -70vh;
-    background-position-x: -15vw;
-    background-size: 145%;
     #form{
         height: 100vh;
         width: 100%;
         position: fixed;
         z-index: 1;
-        background-color: rgba(0, 0, 0, 0.400);
-        #heading{
-            margin-top: 5vh;
-            width: 25vw;
-            background-color: #86A788;
-            text-align: center;
-        }
+        background: url('/cars/signupbackground.jpg');
+        background-position-y: -70vh;
+        background-position-x: -15vw;
+        background-size: 145%;
 
-        .suform{
-            background-color: #fffdeca6;
-            width: 25vw;
-            height: 84vh;
-            padding-top: 4vh;
-            
-            h3{
-                padding-left: 5vh;
-                font-weight: bolder;
+        #bgfade{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.400);
+            padding-top: 5vh;
+            #heading{
+                width: 25vw;
+                background-color: #86A788;
+                text-align: center;
             }
-            label{
-                font-weight: bolder;
-                font-size: large;
-            }
-
-            .inputbox{
-                border: 2px solid black;
-                border-radius: .5vh;
-                width: 20vw;
-                height: 4.5vh;
-                margin-bottom: 1vh;
-                margin-top: 1vh;
-            }
-
-            #subtn{
+    
+            #s-form{
+                background-color: #fffdeca6;
+                width: 25vw;
+                height: 84vh;
+                padding-top: 4vh;
                 
-                height: 5vh;
-                width: 15vw;
-                background-color: black;
-                color: ghostwhite;
-                font-size: large;
-                font-weight: bold;
+                h3{
+                    padding-left: 5vh;
+                    font-weight: bolder;
+                }
+    
+                .inputbox{
+                    border: 2px solid black;
+                    border-radius: .5vh;
+                    width: 20vw;
+                    height: 4.5vh;
+                    margin-bottom: 1vh;
+                    margin-top: 1vh;
+                }
+    
+                #s-btn{
+                    margin-bottom: 1vh;
+                    height: 5vh;
+                    width: 15vw;
+                    background-color: black;
+                    color: ghostwhite;
+                    font-size: large;
+                    font-weight: bold;
+                }
+    
             }
-
         }
     }
+        
+
     
-}

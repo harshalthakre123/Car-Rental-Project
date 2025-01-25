@@ -7,33 +7,37 @@
     <title>Login</title>
 </head>
 <body>
-    <div>
+    <div id="login" align="center">
+        <div id="bgfade">
         <h1 id="heading">Log-in</h1>
-        <form action="#" class="liform">
+        <form action="#" id="l-form">
 
-            <p id="err-username"></p>
-            <label for="username">Enter Username:</label>
+            <p id="err-email"></p>
+            <label for="email"></label>
+            <h3 align="left">Enter Email:</h3>
             <br>
-            <input type="text" placeholder="Username">
+            <input type="text" placeholder="abc123@gmail.com" class="inputbox">
             
             <br>
 
             <p id="err-pass"></p>
-            <label for="password">Enter Password:</label>
+            <label for="password"></label>
+            <h3 align="left">Enter Password:</h3>
             <br>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" class="inputbox">
 
             <br><br>
 
-            <button>Login</button>
+            <button id="l-btn">Login</button>
             
             <br><br>
 
-            <a href="/signup/signup.html">Create New Account</a>
+            <a href="/signup/signup.html" class="newacc">Create New Account</a>
             <br>
             <a href="#">Forgot Password</a>
             
         </form>
+    </div>
     </div>
     
 

@@ -1,4 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+#login{
+    height: 100vh;
+    width: 100%;
+    background: url('/cars/loginbackground.jpg');
+    background-size: cover;
+    background-position-y: -35vh;
+    #bgfade{
+        height: 100vh;
+        width: 100%;
+        padding: 15vh;
+        background-color: rgba(0, 0, 0, 0.400);
+        h1{
+            width: 25vw;
+            background-color: #86A788;
+            text-align: center;
+        }
+        #l-form{
+            background-color: #fffdeca6;
+            width: 25vw;
+            height: 45vh;
+            padding-top: 4vh;
+            
+            h3{
+                padding-left: 5vh;
+                font-weight: bolder;
+                margin-bottom: -2vh;
+            }
+    
+            .inputbox{
+                border: 2px solid black;
+                border-radius: .5vh;
+                width: 20vw;
+                height: 4.5vh;
+                margin-bottom: 1.5vh;
+            }
+    
+            #l-btn{
+                height: 5vh;
+                width: 15vw;
+                background-color: black;
+                color: ghostwhite;
+                font-size: large;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+    
+    
 
 
 
