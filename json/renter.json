@@ -1,14 +1,26 @@
 {
-    "Renter-info":[
-        {
-            "name":"Harshal",
-            "dl":"Mp20220458",
-            "address":"mig 270 bhopal",
-            "contact":"7909926497",
-            "sdate":"22/03/2024",
-            "edate":"23/03/2024",
-            "cname":"s11"
-        }
-        
-    ]
+  "RenterInfo": [
+    {
+      "name": "HARSHAL THAKRE",
+      "dl": "Mp20220458",
+      "address": "mig 270 skp colony bhopal",
+      "contact": "7909926497",
+      "sdate": "2025-01-26",
+      "edate": "2025-01-27",
+      "cname": "Scorpio-S11",
+      "price": 1000,
+      "id": "5d86"
+    },
+    {
+      "id": "a50c",
+      "name": "harshal Thakre",
+      "dl": "sgasdfafwf",
+      "address": "bhopal",
+      "contact": "12323",
+      "sdate": "2025-01-26",
+      "edate": "2025-01-29",
+      "cname": "Defender",
+      "price": 1000
+    }
+  ]
 }
