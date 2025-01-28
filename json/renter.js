@@ -10,6 +10,12 @@
       let res= await fetch(url,{method: "GET"})
       let data= await res.json()
       console.log(data);
+      pagination(data); //Initialize pagination
+    };
+    
+
+    
+    let showData=(data)=>{
 
       
       let show= document.querySelector("#r-info")
@@ -76,6 +82,7 @@
           )
         })
         location.href="renter.html"
+        location.href="index.html"
         return false
       }
 
@@ -181,3 +188,28 @@
       return false;
     }
 
+
+// pagination
+// let pagination = (data) =>{
+//   $('#paging').pagination({
+//     dataSource: data,
+//     pageSize: 5,
+//     showSizeChanger: true,
+//     callback: function(data, pagination) {
+     
+//     }
+
+    
+//   })
+  
+// }
+let pagination = (data) =>{
+$('#paging').pagination({
+  dataSource: data,
+  pageSize: 5,
+  showSizeChanger: true,
+  callback: function(data, pagination) {
+    showData(data)
+  }
+})
+}

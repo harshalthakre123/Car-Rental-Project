@@ -4,29 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Car Rentals</title>
 </head>
 <body>
-    <div id="header">
-        <nav>
-            <div>
-
+    <div id="home">
+        <nav id="nav">
+            <div class="logo">
+                <img src="./cars/Porsche Cayman R (987) Silhouette.jpeg" height="40px" alt="">
+                <div>
+                    <h1>VE<span style="color: red;">H</span>ICLE-ON<span style="color: rgb(25, 109, 235);">ROAD</span></h1>
+                    <h4 align="center" style="color: #cf8a00;">CAR RENTAL SERVICES</h4>
+                </div>
             </div>
             <ul>
-                <li>Home</li>
-                <li>Services <i class="fa-solid fa-angle-down fa-lg" style="color: #ffffff;"></i></li>
-                <li>Cars <i class="fa-solid fa-angle-down fa-lg" style="color: #ffffff;"></i></li>
-                <li>About</li>
+                <li>Home </li>
+                <li>Services <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></li>
+                <li>Cars <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></li>
+                <li>About-us </li>
             </ul>
+            <div class="l-s-btn">
+                <a href="./signup/signup.html" class="loginbtns">Signup</a>&nbsp;/
+                <a href="./login/login.html" class="loginbtns">Login</a>
+            </div>
         </nav>
     </div>
 
-    
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./cars/tyler-clemmensen-5q1xp_kresk-unsplash.jpg" alt="car-1"></div>
+            <div class="swiper-slide"><img src="./cars/stefan-rodriguez-nZHV9YMQt6o-unsplash.jpg" alt="car-2"></div>
+            <div class="swiper-slide"><img src="./cars/rishab-lamichhane-iflRMZelx0M-unsplash.jpg" alt="car-3"></div>
+            <div class="swiper-slide"><img src="./cars/lance-anderson-uA03ucYoj54-unsplash.jpg" alt="car-4"></div>
+            <div class="swiper-slide"><img src="./cars/erik-mclean-6yUvgDTV0sk-unsplash.jpg" alt="car-5"></div>
+            <div class="swiper-slide"><img src="./cars/kevin-bhagat-3cLpiv8h5so-unsplash.jpg" alt="car-6"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="form">
+        <h1>Book now!</h1>
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        
+        <label for="dl-num">Enter Driving Licence No.:</label>
+        <input type="text" id="dlnum">
+        <br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+        <br><br>
+
+        <label for="contactno">Contact Number:</label>
+        <input type="number" id="contactno">
+        <br><br>
+
+        <label for="sdate">Start date:</label>
+        <input type="date" id="sdate">
+
+        <label for="edate">End date:</label>
+        <input type="date" id="edate">
+        <br><br>
+
+        <label for="car">Select Car:</label>
+        <select name="car" id="car">
+            <option value="Swift">Swift</option>
+            <option value="Dzire">Dzire</option>
+            <option value="Scorpio-S11">Scorpio S11</option>
+            <option value="Waganr">Waganr</option>
+            <option value="Defender">Defender</option>
+            <option value="Range-Rover-Sport">Range Rover Sport</option>
+            <option value="Range-Rover-Evoque">Range Rover Evoque</option>
+            <option value="Rolls-Royse-Phantom">Rolls-Royse Phantom</option>
+            <option value="Bmw-x5">Bmw x5</option>
+            <option value="Mercedez-Benz">Mercedez Benz</option>
+            <option value="Audi-A4">Audi A4</option>
+            <option value="Verna">Verna</option>
+            <option value="Slavia">Slavia</option>
+            <option value="Octavia">Octavia</option>
+            <option value="Virtus">Virtus</option>
+            <option value="Venue">Venue</option>
+            <option value="Fortuner">Fortuner</option>
+            <option value="Land-Cruiser">Land Cruiser</option>
+            <option value="Toyota-Hilux">Toyota Hilux</option>
+            <option value="G-wagen">G-wagen</option>
+            <option value="Rolls-Royce-Ghost">Rolls-Royce Ghost</option>
+            <option value="Nissan-Gtr">Nissan Gtr</option>
+            <option value="Ford-Mustang">Ford Mustang</option>
+            <option value="Breeza">Breeza</option>
+            <option value="Honda-City">Honda City</option>
+        </select>
+        <br><br>
+        <input type="Submit" onclick="return inserted()">
+        <br><br>
+        <a href="./json/renter.html">Show Data:</a>
+
+    </div>
 
 
+    <div>
 
+    </div>
+
+
+    <!-- Swiper JS ==========================================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js============================================ -->
     <script src="/main.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script> -->
+    <script src="./animations.js"></script>
+    <script src="./json/renter.js"></script>
 
 
 </body>

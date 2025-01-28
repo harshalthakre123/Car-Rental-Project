@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./renter.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- pagination -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.css" integrity="sha512-TH+vnrhByFI2RzNvaHSqt6EwoJ9Bp+yGAGTWp84qTuTx315ebnypxtyGHpli55Rm4N4J+N/0W9xAL2b5RZ2ZSA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body onload="getdata()">
@@ -30,7 +32,7 @@
                     <th>Start-Date</th>
                     <th>End-Date</th>
                     <th>Car Name</th>
-                    <th>Price(Rs/Hr)</th>
+                    <th>Price(Rs/day)</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -40,19 +42,30 @@
             </tbody>
 
         </table>
-
+        <br><br>
+        
         <div id="formedit">
     
         </div>
+        <br><br>
+        <div id="paging">
+
+        </div>
+        <br><br>
         <a href="./form.html">Form:</a>
 
     </div>    
 
     
 
-    
     <!-- Typeit.js -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- Animation js============== -->
+    <script src="./animation.js"></script>
+    <!-- Pagination======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js" integrity="sha512-GzbaI5EsNzdEUq6/2XLYpr1y9CUZRIVsUeWTAFgULtQa5jZ3Nug8i0nZKM6jp9NffBCZhymPPQFcF0DK+JkRpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- json js=================== -->
     <script src="./renter.js">
         
     

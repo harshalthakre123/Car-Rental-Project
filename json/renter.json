@@ -21,6 +21,72 @@
       "edate": "2025-01-29",
       "cname": "Defender",
       "price": 1000
+    },
+    {
+      "id": "aef0",
+      "name": "Nikhil ",
+      "dl": "abcdefh123456",
+      "address": "shivaji nagar",
+      "contact": "87854545",
+      "sdate": "2025-01-30",
+      "edate": "2025-01-31",
+      "cname": "Rolls-Royse-Phantom",
+      "price": 1000
+    },
+    {
+      "id": "04b5",
+      "name": "ayushi",
+      "dl": "nhi hai",
+      "address": "BHAAD ME",
+      "contact": "12345678",
+      "sdate": "2025-01-28",
+      "edate": "2025-01-28",
+      "cname": "Waganr",
+      "price": 1000
+    },
+    {
+      "id": "e005",
+      "name": "amar bhaiya",
+      "dl": "15541232dfdf",
+      "address": "gaya",
+      "contact": "7852",
+      "sdate": "2025-02-11",
+      "edate": "2025-02-20",
+      "cname": "Defender",
+      "price": 1000
+    },
+    {
+      "id": "21c5",
+      "name": "sapna didi",
+      "dl": "pta nhi",
+      "address": "hydrabad",
+      "contact": "456456456",
+      "sdate": "2025-01-31",
+      "edate": "2025-01-31",
+      "cname": "Verna",
+      "price": 1000
+    },
+    {
+      "name": "harsh thakre",
+      "dl": "mp04202022",
+      "address": "skp colony",
+      "contact": "789456123",
+      "sdate": "2025-01-30",
+      "edate": "2025-01-30",
+      "cname": "Verna",
+      "price": 1000,
+      "id": "8f01"
+    },
+    {
+      "id": "e3c9",
+      "name": "aaryan",
+      "dl": "mp0415256545",
+      "address": "mig 270 bhopal",
+      "contact": "123",
+      "sdate": "2025-01-28",
+      "edate": "2025-01-29",
+      "cname": "Swift",
+      "price": 1000
     }
   ]
 }
