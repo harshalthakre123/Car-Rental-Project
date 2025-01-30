@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- swiper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Car Rentals</title>
+    <link rel="icon" href="">
 </head>
 <body>
     <div id="home">
@@ -25,7 +28,7 @@
                 <li>Home </li>
                 <li>Services <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></li>
                 <li>Cars <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></li>
-                <li>About-us </li>
+                <li><a href="#about-us">About-us</a></li>
             </ul>
             <div class="l-s-btn">
                 <a href="./signup/signup.html" class="loginbtns">Signup</a>&nbsp;/
@@ -49,79 +52,142 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <div id="form">
-        <h1>Book now!</h1>
-        <label for="name">Enter Name:</label>
-        <input type="text" id="name">
-        <br><br>
-        
-        <label for="dl-num">Enter Driving Licence No.:</label>
-        <input type="text" id="dlnum">
-        <br><br>
+    <div id="inventry">
 
-        <label for="address">Address:</label>
-        <input type="text" id="address">
-        <br><br>
+    </div>
 
-        <label for="contactno">Contact Number:</label>
-        <input type="number" id="contactno">
-        <br><br>
-
-        <label for="sdate">Start date:</label>
-        <input type="date" id="sdate">
-
-        <label for="edate">End date:</label>
-        <input type="date" id="edate">
-        <br><br>
-
-        <label for="car">Select Car:</label>
-        <select name="car" id="car">
-            <option value="Swift">Swift</option>
-            <option value="Dzire">Dzire</option>
-            <option value="Scorpio-S11">Scorpio S11</option>
-            <option value="Waganr">Waganr</option>
-            <option value="Defender">Defender</option>
-            <option value="Range-Rover-Sport">Range Rover Sport</option>
-            <option value="Range-Rover-Evoque">Range Rover Evoque</option>
-            <option value="Rolls-Royse-Phantom">Rolls-Royse Phantom</option>
-            <option value="Bmw-x5">Bmw x5</option>
-            <option value="Mercedez-Benz">Mercedez Benz</option>
-            <option value="Audi-A4">Audi A4</option>
-            <option value="Verna">Verna</option>
-            <option value="Slavia">Slavia</option>
-            <option value="Octavia">Octavia</option>
-            <option value="Virtus">Virtus</option>
-            <option value="Venue">Venue</option>
-            <option value="Fortuner">Fortuner</option>
-            <option value="Land-Cruiser">Land Cruiser</option>
-            <option value="Toyota-Hilux">Toyota Hilux</option>
-            <option value="G-wagen">G-wagen</option>
-            <option value="Rolls-Royce-Ghost">Rolls-Royce Ghost</option>
-            <option value="Nissan-Gtr">Nissan Gtr</option>
-            <option value="Ford-Mustang">Ford Mustang</option>
-            <option value="Breeza">Breeza</option>
-            <option value="Honda-City">Honda City</option>
-        </select>
-        <br><br>
-        <input type="Submit" onclick="return inserted()">
-        <br><br>
-        <a href="./json/renter.html">Show Data:</a>
+    <div id="classified">
 
     </div>
 
 
-    <div>
+    <div id="booking">
+        <div class="step" data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-center"
+        >
+            <h1>For booking,</h1>
+            <h1>Just fill the form and click on submit.</h1>
+        </div>
+
+        <div class="form" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-center">
+            <h1>Booking-Form</h1>
+            <br>
+            <label for="name" class="f-label">Enter Name:</label>
+            <br>
+            <input type="text" id="name" class="finp1">
+            <br><br>
+            
+            <label for="dl-num" class="f-label">Enter Driving Licence No.:</label>
+            <br>
+            <input type="text" id="dlnum" class="finp1">
+            <br><br>
+
+            <label for="address" class="f-label">Address:</label>
+            <br>
+            <input type="text" id="address" class="finp1">
+            <br><br>
+
+            <label for="contactno" class="f-label">Contact Number:</label>
+            <br>
+            <input type="number" id="contactno" class="finp1">
+            <br><br>
+
+            <label for="sdate" class="f-label">Start date:</label>
+            &nbsp;<input type="date" id="sdate" class="finp2">
+            <br><br>
+            <label for="edate" class="f-label">End date:</label>
+            &nbsp;&nbsp;<input type="date" id="edate" class="finp2">
+            <br><br>
+
+            <label for="car" class="f-label">Select Car:</label>
+            <select name="car" id="car" class="finp2">
+                <option value="Swift">Swift</option>
+                <option value="Dzire">Dzire</option>
+                <option value="Scorpio-S11">Scorpio S11</option>
+                <option value="Waganr">Waganr</option>
+                <option value="Defender">Defender</option>
+                <option value="Range-Rover-Sport">Range Rover Sport</option>
+                <option value="Range-Rover-Evoque">Range Rover Evoque</option>
+                <option value="Rolls-Royse-Phantom">Rolls-Royse Phantom</option>
+                <option value="Bmw-x5">Bmw x5</option>
+                <option value="Mercedez-Benz">Mercedez Benz</option>
+                <option value="Audi-A4">Audi A4</option>
+                <option value="Verna">Verna</option>
+                <option value="Slavia">Slavia</option>
+                <option value="Octavia">Octavia</option>
+                <option value="Virtus">Virtus</option>
+                <option value="Venue">Venue</option>
+                <option value="Fortuner">Fortuner</option>
+                <option value="Land-Cruiser">Land Cruiser</option>
+                <option value="Toyota-Hilux">Toyota Hilux</option>
+                <option value="G-wagen">G-wagen</option>
+                <option value="Rolls-Royce-Ghost">Rolls-Royce Ghost</option>
+                <option value="Nissan-Gtr">Nissan Gtr</option>
+                <option value="Ford-Mustang">Ford Mustang</option>
+                <option value="Breeza">Breeza</option>
+                <option value="Honda-City">Honda City</option>
+            </select>
+            <br><br>
+            <input type="Submit" onclick="return inserted()" class="submit-btn">
+            <br><a href="./json/renter.html">Show Data</a>
+
+        </div>
+    </div>
+
+
+    <div id="Why-choose-us">
+
+    </div>
+
+    <div id="about-us">
+        <h1>About-Us</h1>
+        <p>At VEHICLE-ONROAD(Car Rental Services), we are committed to providing our customers with the best car rental experience possible. Whether you're traveling for business, vacation, or need a temporary ride, our mission is to offer reliable, convenient, and affordable transportation options that suit your needs.
+            <br><br>
+
+            Founded in January 2025, our company has grown to become a trusted name in the car rental industry. We take pride in our fleet of well-maintained vehicles, ranging from compact cars to luxury models and everything in between. Our goal is to make your journey smooth and stress-free, from the moment you book your vehicle to the time you return it.
+            <br><br>
+            
+            What sets us apart is our dedication to exceptional customer service. We go above and beyond to ensure every rental experience is seamless and enjoyable. Our team is here to assist you with personalized service, and we're always available to answer your questions or offer support when needed.
+            <br><br>
+            
+            At VEHICLE-ONROAD(Car Rental Services), we believe in transparency, so there are no hidden fees or surprises. Our flexible rental terms and competitive pricing ensure you get the best value for your money.
+            
+            Thank you for choosing us as your trusted car rental provider. We look forward to serving you and making your next trip a memorable one.</p>
+
+    </div>
+
+    <div id="footer">
 
     </div>
 
 
+
+<!-- SCRIPTS=================================================================================================== -->
+    
+
+    <!-- vanta.js=========================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="./vanta.js"></script>
     <!-- Swiper JS ==========================================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./Swipe.js"></script>
+    <!-- AOS.js================================================= -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <!-- main js============================================ -->
     <script src="/main.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script> -->
-    <script src="./animations.js"></script>
+    <!-- json.js================================ -->
     <script src="./json/renter.js"></script>
 
 

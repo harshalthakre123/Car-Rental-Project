@@ -20,6 +20,8 @@
       
       let show= document.querySelector("#r-info")
 
+        show.innerHTML="";
+
       data.map((e)=>{
 
         show.innerHTML+=`

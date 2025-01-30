@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 #nav {
@@ -32,6 +34,9 @@
   border-bottom: 2.5px solid rgb(255, 60, 0);
   border-radius: 1vh;
 }
+#nav ul li a {
+  color: white;
+}
 #nav .l-s-btn {
   margin-right: -10vw;
 }
@@ -51,7 +56,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -73,8 +78,85 @@ body {
      object-position: bottom;
 }
 
-#form {
+#booking {
+  background-color: rgb(206, 206, 196);
+  color: ghostwhite;
   height: 100vh;
   width: 100%;
-  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+#booking div {
+  margin: 5vh;
+}
+#booking .step {
+  height: 93vh;
+  width: 65%;
+  border-radius: 2vh;
+  background: url("./cars/dan-gold-N7RiDzfF2iw-unsplash.jpg") no-repeat;
+  background-size: 165%;
+  background-position-y: -12vh;
+  padding: 10vh;
+  color: ghostwhite;
+}
+#booking .form {
+  height: 93vh;
+  width: 35%;
+  padding-top: 2.5vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-bottom: 3vh;
+  border-radius: 2vh;
+  background: linear-gradient(to bottom right, #000e36, #ff004c);
+  font-weight: bold;
+}
+#booking .form h1 {
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 2vh;
+}
+#booking .form .finp1 {
+  height: 4.65vh;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+}
+#booking .form .finp2 {
+  height: 4.65vh;
+  width: 69%;
+  border: 2px solid rgb(0, 0, 0);
+}
+#booking .form .submit-btn {
+  height: 6vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 1vh;
+}
+#booking .form a {
+  color: rgb(4, 6, 61);
+  font-weight: 300;
+  font-size: 10px;
+  margin-left: 41%;
+}
+
+#about-us {
+  height: 100vh;
+  width: 100%;
+  padding: 5vh;
+  background-color: rgb(206, 206, 196);
+}
+#about-us h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+#about-us p {
+  font-size: 19px;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */
