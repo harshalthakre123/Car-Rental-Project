@@ -34,8 +34,8 @@
           <td>${e.edate}</td>
           <td>${e.cname}</td>
           <td>${e.price}</td>
-          <td onclick="edit('${e.id}')">Edit </td>
-          <td onclick="deletee('${e.id}')">Delete </td>
+          <td id="edit" onclick="edit('${e.id}')">Edit </td>
+          <td id="delete" onclick="deletee('${e.id}')">Delete </td>
         </tr>
             `
       
@@ -95,26 +95,27 @@
       let data= await res.json()
 
       let datafill=`
-      <label for="name">Enter Name:</label>
+      <h1 align="center">Edit-Details</h1>
+      <label for="name">Enter Name:</label><br>
     <input type="text" id="upname" value="${data.name}">
     <br><br>
     
-    <label for="dl-num">Enter Driving Licence No.:</label>
+    <label for="dl-num">Enter Driving Licence No.:</label><br>
     <input type="text" id="updlnum" value="${data.dl}">
     <br><br>
 
-    <label for="address">Address:</label>
+    <label for="address">Address:</label><br>
     <input type="text" id="upaddress" value="${data.address}">
     <br><br>
 
-    <label for="contactno">Contact Number:</label>
+    <label for="contactno">Contact Number:</label><br>
     <input type="number" id="upcontactno" value="${data.contact}">
     <br><br>
 
-    <label for="sdate">Start date:</label>
+    <label for="sdate">Start date:</label>&nbsp;
     <input type="date" id="upsdate" value="${data.sdate}">
-
-    <label for="edate">End date:</label>
+    <br><br>
+    <label for="edate">End date: </label>&nbsp;
     <input type="date" id="upedate" value="${data.edate}">
     <br><br>
 
@@ -147,10 +148,7 @@
         <option value="Honda-City" ${data.cname==="Honda-City"? "selected":""}>Honda City</option>
     </select>
     <br><br>
-    <lablel for="price">Price:</label>
-    <input type="number" id="upprice" value="1000">
-    <br><br>
-    <input type="submit" value="Update" onclick="return finaledit('${data.id}')">`
+    <input type="submit" id=updatebtn value="Update" onclick="return finaledit('${data.id}')">`
 
     document.querySelector("#formedit").innerHTML=datafill
 
@@ -191,26 +189,13 @@
     }
 
 
-// pagination
-// let pagination = (data) =>{
-//   $('#paging').pagination({
-//     dataSource: data,
-//     pageSize: 5,
-//     showSizeChanger: true,
-//     callback: function(data, pagination) {
-     
-//     }
-
-    
-//   })
-  
-// }
 let pagination = (data) =>{
 $('#paging').pagination({
   dataSource: data,
   pageSize: 5,
   showSizeChanger: true,
-  callback: function(data, pagination) {
+  callback: function(data, pagination) 
+  {
     showData(data)
   }
 })

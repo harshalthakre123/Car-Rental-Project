@@ -26,6 +26,121 @@
 
 #hero {
   background: rgb(236, 230, 230);
-  height: 100vh;
+  height: 90vh;
   padding: 5vh;
+  background: url("../cars/Mclaren.jpeg");
+  background-size: cover;
+}
+
+#heading {
+  margin-left: 37%;
+  margin-right: 37%;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 2vh;
+  background-color: black;
+  color: rgb(0, 255, 255);
+}
+
+table {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 2vh;
+}
+table thead .mhead {
+  height: 8vh;
+  font-size: 22px;
+  background-color: #1B1A55;
+  color: rgb(255, 255, 255);
+}
+table thead tr {
+  height: 7.5vh;
+  font-size: 20px;
+  background-color: #ff9100;
+}
+table tbody {
+  font-size: 16px;
+}
+table tbody tr td {
+  height: 5vh;
+  background-color: white;
+  padding: 1vh;
+}
+table tbody tr #edit {
+  cursor: pointer;
+  text-align: center;
+  height: 5vh;
+  background-color: #046815;
+  color: white;
+  padding: 1vh;
+}
+table tbody tr #delete {
+  cursor: pointer;
+  text-align: center;
+  height: 5vh;
+  background-color: #d60000;
+  color: white;
+  padding: 1vh;
+}
+
+#formedit {
+  height: 95%;
+  color: rgb(0, 0, 0);
+  border-radius: 2vh;
+  padding: 5vh;
+  padding-left: 10vh;
+}
+#formedit h1 {
+  width: 33vw;
+  border: 2px solid white;
+  color: rgb(255, 0, 0);
+  border-radius: 2vh;
+  background-color: black;
+  margin-bottom: 4vh;
+}
+#formedit label {
+  font-size: 20px;
+}
+#formedit input {
+  padding: 5px;
+  height: 5vh;
+  width: 32vw;
+  border: 2px solid black;
+  border-radius: 1vh;
+  font-size: 18px;
+}
+#formedit #upedate {
+  height: 5vh;
+  width: 25vw;
+}
+#formedit #upsdate {
+  height: 5vh;
+  width: 25vw;
+}
+#formedit select {
+  padding: 3px;
+  height: 5vh;
+  width: 25vw;
+  border: 2px solid black;
+  border-radius: 1vh;
+  font-size: 18px;
+}
+#formedit #updatebtn {
+  cursor: pointer;
+  height: 6vh;
+  width: 33vw;
+  background-color: #046815;
+  border: 2px solid #046815;
+  border-radius: 2vh;
+  color: black;
+  font-size: larger;
+}
+
+#form-nb {
+  height: 3vh;
+  padding: 0.5vh;
+  border: 2px solid white;
+  border-radius: 1vh;
+  background-color: rgb(255, 96, 4);
+  color: white;
+  font-size: 17px;
 }/*# sourceMappingURL=renter.css.map */
