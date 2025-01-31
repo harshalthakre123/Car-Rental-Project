@@ -2,6 +2,26 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+}
+
+#nav {
+  height: 9vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding-top: 1vh;
+  padding-left: 6vw;
+}
+#nav .logo {
+  display: flex;
+}
+#nav .logo a {
+  color: white;
 }
 
 #hero {

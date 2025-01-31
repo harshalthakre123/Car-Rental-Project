@@ -1,9 +1,11 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  
 }
 // #home{
 // }
@@ -20,7 +22,10 @@
 
     .logo{
       display: flex;
-        margin-left: -8vw;
+      margin-left: -8vw;
+      a{
+        color: white;
+      }
     }
     
     ul{
@@ -37,6 +42,9 @@
             a{
               color: white;
             }
+            a:hover{
+              color: red;
+            }
         }
     }
     .l-s-btn{
@@ -52,6 +60,10 @@
         color: rgb(255, 255, 255);
         font-weight: bold;
     
+    }
+    .loginbtns:hover{
+      color: rgb(255, 191, 0);
+      border: 2.5px solid rgb(29, 221, 255);
     }
 
         
@@ -101,6 +113,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   padding-left: 10vh;
@@ -115,10 +128,13 @@
       width: 65%;
       border-radius: 2vh;
       background: url('./cars/dan-gold-N7RiDzfF2iw-unsplash.jpg') no-repeat;
-      background-size: 165%;
-      background-position-y: -12vh;
-      padding: 10vh;
-      color: ghostwhite;
+      background-size: cover;
+      background-position-x: -8vh;
+      padding: 20vh;
+      padding-left: 10vh;
+      font-size: 17.5px;
+      font-weight: bolder;
+      color: rgb(255, 187, 0);
     
       
     }
@@ -130,14 +146,17 @@
       padding-right: 6vh;
       padding-bottom: 3vh;
       border-radius: 2vh;
+      font-size: 17px;
+      font-weight: 550;
       // background: linear-gradient(to bottom right, black,red);
       background: linear-gradient(to bottom right, #000e36, #ff004c);
-      font-weight: bold;
+      
       h1{
         text-align: center;
         border: 3px solid white;
         border-radius: 2vh;
-        
+        font-weight: bold;
+
       }
       .finp1{
         height: 4.65vh;
@@ -155,14 +174,16 @@
         width: 100%;
         background-color: black;
         color: white;
+        font-size: 20px;
+        font-weight: bold;
         border: 1px solid black;
         border-radius: 1vh;
       }
       a{
-        color: rgb(4, 6, 61);
+        color: rgb(5, 7, 107);
         font-weight: 300;
-        font-size: 10px;
-        margin-left: 41%;
+        font-size: 14px;
+        margin-left: 39%;
         
       }
       
@@ -178,8 +199,9 @@
   
   height: 100vh;
   width: 100%;
-  padding: 5vh;
+  padding: 10vh;
   background-color: rgb(206, 206, 196);
+  color: black;
 
   h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -189,7 +211,41 @@
     margin-bottom: 5vh;
   }
   p{
-    font-size: 19px;
+    line-height: 4.5vh;
+    font-size: 20px;
     text-align: justify;
   }
+}
+
+
+// Footer============================================================
+#footer{
+  height: 35vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 5vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-bottom: 5vh;
+
+  .f1{
+    height: 15vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40vw;
+  }
+
+  .f2{
+    height: 10vh;
+    width: 100%;
+    padding-top: 5vh;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20vw;
+
+
+  }
+
 }
