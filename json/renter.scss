@@ -28,8 +28,8 @@
 // hero================================================================================
 
 #hero{
+    height: 100vh;
     background: rgb(236, 230, 230);
-    height: 90vh;
     padding: 5vh;
     background: url("../cars/Mclaren.jpeg");
     background-size: cover;
@@ -86,8 +86,10 @@ table{
         text-align: center;
         height: 5vh;
         background-color: #046815;
-        color: white;
         padding: 1vh;
+        a{
+          color: white;
+        }
       }
 
       #delete{
@@ -108,7 +110,7 @@ table{
 // Form-Edit============================================================================
 
 #formedit{
-  height: 95%;
+  // height: 95%;
   // border: 2px solid rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border-radius: 2vh;

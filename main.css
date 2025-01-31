@@ -92,10 +92,9 @@ body {
 #booking {
   background-color: rgb(206, 206, 196);
   color: ghostwhite;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   padding-left: 10vh;
@@ -163,7 +162,7 @@ body {
 }
 
 #about-us {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 10vh;
   background-color: rgb(206, 206, 196);

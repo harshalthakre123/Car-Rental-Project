@@ -34,7 +34,7 @@
           <td>${e.edate}</td>
           <td>${e.cname}</td>
           <td>${e.price}</td>
-          <td id="edit" onclick="edit('${e.id}')">Edit </td>
+          <td id="edit" onclick="edit('${e.id}')"><a href="#formedit">Edit</a></td>
           <td id="delete" onclick="deletee('${e.id}')">Delete </td>
         </tr>
             `
@@ -193,7 +193,9 @@ let pagination = (data) =>{
 $('#paging').pagination({
   dataSource: data,
   pageSize: 5,
-  showSizeChanger: true,
+  showGoInput: true,
+  showGoButton: true,
+  // showSizeChanger: true,
   callback: function(data, pagination) 
   {
     showData(data)

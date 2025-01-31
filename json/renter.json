@@ -1,15 +1,15 @@
 {
   "RenterInfo": [
     {
-      "id": "8244",
       "name": "Harshal Thakre",
       "dl": "MP04 20230009128",
-      "address": "MIg-270,Skp colony, Bhopal",
+      "address": "Mig-270,Skp colony, Bhopal",
       "contact": "7909926497",
       "sdate": "2025-02-01",
       "edate": "2025-02-02",
-      "cname": "Venue",
-      "price": 1000
+      "cname": "Scorpio-S11",
+      "price": 1000,
+      "id": "8244"
     },
     {
       "id": "29f4",
@@ -20,6 +20,83 @@
       "sdate": "2025-02-03",
       "edate": "2025-01-07",
       "cname": "Verna",
+      "price": 1000
+    },
+    {
+      "name": "Nikhil Patel",
+      "dl": "MP04 20250003578",
+      "address": "Shivaji Nagar, Bhopal",
+      "contact": "9409453571",
+      "sdate": "2025-01-31",
+      "edate": "2025-02-01",
+      "cname": "Rolls-Royse-Phantom",
+      "price": 1000,
+      "id": "5ba5"
+    },
+    {
+      "name": "Amar Yadav",
+      "dl": "MP04 20200009546",
+      "address": "Jahagirabad, Bhopal",
+      "contact": "8871856549",
+      "sdate": "2025-02-10",
+      "edate": "2025-02-12",
+      "cname": "Land-Cruiser",
+      "price": 1000,
+      "id": "15da"
+    },
+    {
+      "name": "Nikita Thakre",
+      "dl": "MP04 20250003218",
+      "address": "MIG-270, Skp, Bhopal",
+      "contact": "8839929293",
+      "sdate": "2025-02-01",
+      "edate": "2025-01-06",
+      "cname": "Venue",
+      "price": 1000,
+      "id": "fa93"
+    },
+    {
+      "name": "Aayushi Gour",
+      "dl": "NA",
+      "address": "Subhalaya, Bhopal",
+      "contact": "7864593548",
+      "sdate": "2025-01-31",
+      "edate": "2025-01-31",
+      "cname": "Nissan-Gtr",
+      "price": 1000,
+      "id": "3ff5"
+    },
+    {
+      "id": "e995",
+      "name": "Sapna Sahani",
+      "dl": "MP04 20210003215",
+      "address": "Jahagirabad, Bhopal",
+      "contact": "9517537894",
+      "sdate": "2025-01-31",
+      "edate": "2025-01-31",
+      "cname": "Audi-A4",
+      "price": 1000
+    },
+    {
+      "id": "6ee2",
+      "name": "Agam Saxena",
+      "dl": "MP04 20240003232",
+      "address": "Kolar, Bhopal",
+      "contact": "6261646768",
+      "sdate": "2025-02-11",
+      "edate": "2025-02-11",
+      "cname": "Breeza",
+      "price": 1000
+    },
+    {
+      "id": "16e0",
+      "name": "Vikas Meena",
+      "dl": "MP04 20240003578",
+      "address": "Radhapuram Campus, Bhopal",
+      "contact": "9150827965",
+      "sdate": "2025-01-31",
+      "edate": "2035-12-31",
+      "cname": "Scorpio-S11",
       "price": 1000
     }
   ]
