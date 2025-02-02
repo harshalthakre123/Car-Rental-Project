@@ -105,14 +105,63 @@
     }
 
 
+// INVENTRY=====================================================================================
+
+#inventry{
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  padding: 5vh;
+  padding-top: 12vh;
+  padding-bottom: 15vh;
+  background-color: rgb(206, 206, 196);
+
+  h1{
+    margin-bottom: 7.5vh;
+  }
+  
+  
+  .carz{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+
+    div{
+      height: 80vh;
+      width: 30vw;
+      background-color: gray;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Booking Form===========================================================================================
 
 #booking{
   background-color: rgb(206, 206, 196);
   color: ghostwhite;
-  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   padding-left: 10vh;
@@ -139,7 +188,7 @@
     }
     .form{
       height: 93vh;
-      width: 35%;
+      min-width: 30vw;
       padding-top: 2.5vh;
       padding-left: 6vh;
       padding-right: 6vh;
@@ -216,10 +265,73 @@
   }
 }
 
+.testimonials {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.testimonial p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 // Footer============================================================
 #footer{
-  height: 35vh;
+  min-height: 35vh;
+  max-height: 100%;
   width: 100%;
   background-color: black;
   color: white;

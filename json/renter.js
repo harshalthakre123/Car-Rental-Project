@@ -193,8 +193,7 @@ let pagination = (data) =>{
 $('#paging').pagination({
   dataSource: data,
   pageSize: 5,
-  showGoInput: true,
-  showGoButton: true,
+  showSizeChanger: true,
   // showSizeChanger: true,
   callback: function(data, pagination) 
   {

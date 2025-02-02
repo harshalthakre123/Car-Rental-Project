@@ -28,7 +28,8 @@
 // hero================================================================================
 
 #hero{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
     background: rgb(236, 230, 230);
     padding: 5vh;
     background: url("../cars/Mclaren.jpeg");
