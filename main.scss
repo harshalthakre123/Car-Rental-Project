@@ -137,8 +137,8 @@
       justify-content: center;
 
       .cars{
-        height: 60vh;
-        width: 30vw;
+        height: auto;
+        width: auto;
       }
       .info{
         height: 20vh;
@@ -393,3 +393,374 @@ h2 {
   }
 
 }
+
+
+
+
+// Our inventry media query ===================================
+
+
+#inventry {
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  padding: 5vh;
+  padding-top: 12vh;
+  padding-bottom: 15vh;
+  background-color: rgb(206, 206, 196);
+}
+
+#inventry h1 {
+  margin-bottom: 10vh;
+}
+
+#inventry .carz {
+  display: grid;
+  grid-template-columns: auto auto; /* Default: 2 columns */
+  align-items: center;
+  justify-content: center;
+  gap: 20vh;
+}
+
+#inventry .carz div {
+  height: 80vh;
+  width: 30vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#inventry .carz div .cars {
+  height: auto;
+  width: auto;
+}
+
+#inventry .carz div .info {
+  height: 20vh;
+  width: 30vw;
+  padding: 5vh;
+  padding-top: 5vh;
+}
+
+#inventry .carz div .info h2 {
+  font-size: 23px;
+  color: red;
+}
+
+#inventry .carz div .info .bookbtn {
+  padding: 1vh;
+  height: 8vh;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 2vh;
+  background-color: black;
+}
+
+/* Media Queries for smaller screens */
+
+/* Tablets and below */
+@media screen and (max-width: 1024px) {
+  #inventry .carz {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+    gap: 10vh; /* Reduced gap for medium screens */
+  }
+
+  #inventry .carz div {
+    width: 45vw; /* Increase width to fill space more effectively */
+  }
+
+  #inventry .carz div .info {
+    width: 45vw; /* Adjust info width */
+    padding: 4vh;
+  }
+
+  #inventry .carz div .info h2 {
+    font-size: 20px;
+  }
+
+  #inventry .carz div .info .bookbtn {
+    height: 7vh; /* Adjust button height */
+  }
+}
+
+/* Small devices (mobile phones) */
+@media screen and (max-width: 768px) {
+  #inventry .carz {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 5vh; /* Reduce gap for small screens */
+  }
+
+  #inventry .carz div {
+    width: 85vw; /* Adjust width to take up more screen space */
+    height: auto; /* Adjust height for better mobile view */
+  }
+
+  #inventry .carz div .info {
+    width: 85vw; /* Adjust info section width */
+    padding: 3vh;
+  }
+
+  #inventry .carz div .info h2 {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  #inventry .carz div .info .bookbtn {
+    height: 6vh; /* Adjust button size for mobile */
+  }
+}
+
+/* Very small devices (small mobile screens) */
+@media screen and (max-width: 450px) {
+  #inventry .carz {
+    grid-template-columns: 1fr; /* One column on very small screens */
+    gap: 3vh; /* Smaller gap for tiny screens */
+  }
+
+  #inventry .carz div {
+    width: 90vw; /* Increase the width for very small screens */
+  }
+
+  #inventry .carz div .info {
+    width: 90vw; /* Adjust the width to match the container */
+    padding: 2vh;
+  }
+
+  #inventry .carz div .info h2 {
+    font-size: 16px; /* Smaller font for compact screens */
+  }
+
+  #inventry .carz div .info .bookbtn {
+    height: 5vh; /* Adjust button height for better mobile experience */
+    font-size: 14px; /* Reduce font size for button */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Booking media queries=================================
+
+#booking {
+  background-color: rgb(206, 206, 196);
+  color: ghostwhite;
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+#booking div {
+  margin: 5vh;
+}
+
+#booking .step {
+  height: 93vh;
+  width: 65%;
+  border-radius: 2vh;
+  background: url('./cars/dan-gold-N7RiDzfF2iw-unsplash.jpg') no-repeat;
+  background-size: cover;
+  background-position-x: -8vh;
+  padding: 20vh;
+  padding-left: 10vh;
+  font-size: 17.5px;
+  font-weight: bolder;
+  color: rgb(255, 187, 0);
+}
+
+#booking .form {
+  height: 93vh;
+  min-width: 30vw;
+  padding-top: 2.5vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-bottom: 3vh;
+  border-radius: 2vh;
+  font-size: 17px;
+  font-weight: 550;
+  background: linear-gradient(to bottom right, #000e36, #ff004c);
+}
+
+#booking .form h1 {
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 2vh;
+  font-weight: bold;
+}
+
+#booking .form .finp1 {
+  height: 4.65vh;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#booking .form .finp2 {
+  height: 4.65vh;
+  width: 69%;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#booking .form .submit-btn {
+  height: 6vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 1vh;
+}
+
+#booking .form a {
+  color: rgb(5, 7, 107);
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 39%;
+}
+
+/* Media Queries for smaller devices */
+@media screen and (max-width: 1024px) {
+  #booking {
+    flex-direction: column;
+    padding-left: 8vh;
+    padding-right: 8vh;
+  }
+
+  #booking .step {
+    width: 80%;
+    height: 70vh;
+    padding: 15vh 10vh;
+    font-size: 15px;
+  }
+
+  #booking .form {
+    width: 80%;
+    height: auto;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 3vh;
+  }
+
+  #booking .form h1 {
+    font-size: 22px;
+  }
+
+  #booking .form .finp1,
+  #booking .form .finp2 {
+    height: 5vh;
+  }
+
+  #booking .form .submit-btn {
+    height: 6vh;
+  }
+
+  #booking .form a {
+    margin-left: 35%;
+  }
+}
+
+/* Media Queries for devices with max width of 768px (Tablets and below) */
+@media screen and (max-width: 768px) {
+  #booking {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  #booking .step {
+    width: 100%;
+    height: 50vh;
+    padding: 10vh 5vh;
+    font-size: 14px;
+  }
+
+  #booking .form {
+    width: 100%;
+    height: auto;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  #booking .form h1 {
+    font-size: 18px;
+  }
+
+  #booking .form .finp1,
+  #booking .form .finp2 {
+    height: 6vh;
+    width: 100%;
+  }
+
+  #booking .form .submit-btn {
+    height: 7vh;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #booking .form a {
+    margin-left: 30%;
+  }
+}
+
+/* Media Queries for devices with max width of 450px (Mobile devices) */
+@media screen and (max-width: 450px) {
+  #booking {
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+
+  #booking .step {
+    width: 100%;
+    height: auto;
+    padding: 8vh 4vh;
+    font-size: 13px;
+  }
+
+  #booking .form {
+    width: 100%;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  #booking .form h1 {
+    font-size: 16px;
+  }
+
+  #booking .form .finp1,
+  #booking .form .finp2 {
+    height: 7vh;
+    width: 100%;
+  }
+
+  #booking .form .submit-btn {
+    height: 8vh;
+    font-size: 16px;
+  }
+
+  #booking .form a {
+    margin-left: 25%;
+    font-size: 12px;
+  }
+}
+
+
+
+
