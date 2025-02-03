@@ -99,7 +99,7 @@ body {
   background-color: rgb(206, 206, 196);
 }
 #inventry h1 {
-  margin-bottom: 7.5vh;
+  margin-bottom: 10vh;
 }
 #inventry .carz {
   display: grid;
@@ -111,7 +111,33 @@ body {
 #inventry .carz div {
   height: 80vh;
   width: 30vw;
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#inventry .carz div .cars {
+  height: 60vh;
+  width: 30vw;
+}
+#inventry .carz div .info {
+  height: 20vh;
+  width: 30vw;
+  padding: 5vh;
+  padding-top: 5vh;
+}
+#inventry .carz div .info h2 {
+  font-size: 23px;
+  color: red;
+}
+#inventry .carz div .info .bookbtn {
+  padding: 1vh;
+  height: 8vh;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 2vh;
+  background-color: black;
 }
 
 #booking {
