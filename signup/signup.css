@@ -18,7 +18,7 @@
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 #form #bgfade #heading {
   width: 25vw;
@@ -28,8 +28,9 @@
 #form #bgfade #s-form {
   background-color: rgba(255, 253, 236, 0.6509803922);
   width: 25vw;
-  height: 84vh;
+  height: auto;
   padding-top: 4vh;
+  padding-bottom: 3vh;
 }
 #form #bgfade #s-form h3 {
   padding-left: 5vh;

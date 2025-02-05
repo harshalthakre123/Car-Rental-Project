@@ -234,7 +234,7 @@ body {
   text-align: justify;
 }
 
-.testimonials {
+#testimonials {
   max-width: 1200px;
   margin: 50px auto;
   text-align: center;
