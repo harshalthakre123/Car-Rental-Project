@@ -10,25 +10,25 @@
     <div id="login" align="center">
         <div id="bgfade">
         <h1 id="heading">Log-in</h1>
-        <form action="/index.html" id="l-form">
+        <form id="l-form">
 
-            <p id="err-email"></p>
+            <p id="merror"></p>
             <label for="email"></label>
             <h3 align="left">Enter Email:</h3>
             <br>
-            <input type="text" placeholder="abc123@gmail.com" class="inputbox">
+            <input type="text" placeholder="abc123@gmail.com" class="inputbox" id="email">
             
             <br>
 
-            <p id="err-pass"></p>
+            
             <label for="password"></label>
             <h3 align="left">Enter Password:</h3>
             <br>
-            <input type="password" placeholder="Password" class="inputbox">
+            <input type="password" placeholder="Password" class="inputbox" id="password">
 
             <br><br>
 
-            <button id="l-btn">Login</button>
+            <input type="submit" id="l-btn" value="Login" onclick="return login()">
             
             <br><br>
 
@@ -41,7 +41,8 @@
     </div>
     
 
-    <script src="/login/login.js"></script>
+    <!-- <script src="/login/login.js"></script> -->
+     <script src="/signup/signup.js"></script>
 
     
 </body>
