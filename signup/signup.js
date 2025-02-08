@@ -39,16 +39,6 @@ let signup = () => {
         return false;
     }
     
-    // if (isNaN(signmobile)) {
-    //     errorname.innerHTML="";
-    //     erroremail.innerHTML="";
-    //     errormobile.innerHTML="Please enter your mobile number."
-    //     errormobile.style.color= "red";
-    //     document.querySelector("#mob-num").focus();
-    //     return false;
-    // }
-    
-    
     if (signmobile === "") {
         errorname.innerHTML="";
         erroremail.innerHTML="";
@@ -165,7 +155,7 @@ let login= ()=>{
       return false;
     }
   
-    else if (!(signemail.includes('@') && signemail.includes('.com'))) {
+    else if (!(loginemail.includes('@') && loginemail.includes('.com'))) {
         merror.innerHTML="Please enter valid email."
         merror.style.color= "red";
         document.querySelector("#email").focus();
@@ -191,9 +181,9 @@ let login= ()=>{
             }
     
   
-    // Retrieve stored credentials
+
     let storedemail = localStorage.getItem("email");
-    let storedPassword = localStorage.getItem("password");
+    let storedPassword = localStorage.getItem("pass");
   
   
     if (loginemail === storedemail && loginpassword === storedPassword) {
